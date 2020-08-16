@@ -1,0 +1,59 @@
+<!-- Create a Simple Form with Username, Password and Email Field and perform following
+DOM Operations
+a. Empty validation for all the fields.
+b. Read the value of the above fields and display it in the page, below the forms.
+c. Clear the fields once the user submit the form. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        .myclass {
+            background: url("https://picsum.photos/id/26/1400/1200");
+        }
+    </style>
+    <script src="2.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid myclass">
+        <div class="row text-light d-flex  justify-content-center align-items-center" style="height: 50vh;">
+            <div class="col"></div>
+            <div class="col" style="border: 1px solid blanchedalmond; padding :1px 1px shadow-lg p-3 mb-5">
+                <form action="">
+                    <div class="col m-1" style="display: flex; justify-content: center; align-items: center;">
+                        Username:<input id="userid" type="text" placeholder="Username" process="" required><br /></div>
+                    <div class="col m-1" style="display: flex; justify-content: center; align-items: center;">Password:
+                        <input id="passid" type="password" placeholder="Password" process="" required><br />
+                    </div>
+                    <div class="col m-1" style="display: flex; justify-content: center; align-items: center;">Email:
+                        <input id="emailid" type="email" placeholder="Email" process="" required><br /></div>
+                    <div class="col m-1" style="display: flex; justify-content: center; align-items: center;"><button
+                            onclick="submitHere()">Submit
+                        </button>
+                    </div>
+            </div>
+            </form>
+            <div class="col"></div>
+        </div>
+        <div class="row d-flex flex-column text-light" id="commentBox" style="height: 50vh;">
+            <div class="col d-flex flex-column align-items-center" id="referencefid" style="visibility: hidden;">
+                <div>Username</div>
+                <div>Password</div>
+                <div>Email</div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
